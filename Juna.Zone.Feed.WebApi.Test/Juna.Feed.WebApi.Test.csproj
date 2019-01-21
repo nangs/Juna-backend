@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dummy\**" />
+    <EmbeddedResource Remove="Dummy\**" />
+    <None Remove="Dummy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="Moq" Version="4.9.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Juna.Zone.DDDCore\Juna.DDDCore.csproj" />
+    <ProjectReference Include="..\Juna.Zone.Feed.Dao\Juna.Feed.Dao.csproj" />
+    <ProjectReference Include="..\Juna.Zone.Feed.DomainModel\Juna.Feed.DomainModel.csproj" />
+    <ProjectReference Include="..\Juna.Zone.Feed.Repository\Juna.Feed.Repository.csproj" />
+    <ProjectReference Include="..\Juna.Zone.Feed.Service\Juna.Feed.Service.csproj" />
+    <ProjectReference Include="..\Juna.Zone.Feed.WebApi\Juna.Feed.WebApi.csproj" />
+    <ProjectReference Include="..\Juna.Zone.FeedFlows\Juna.FeedFlows.csproj" />
+  </ItemGroup>
+
+</Project>

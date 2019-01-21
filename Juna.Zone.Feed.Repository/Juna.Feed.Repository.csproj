@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="stream-net" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Juna.Zone.DDDCore\Juna.DDDCore.csproj" />
+    <ProjectReference Include="..\Juna.Zone.Feed.Dao\Juna.Feed.Dao.csproj" />
+    <ProjectReference Include="..\Juna.Zone.Feed.DomainModel\Juna.Feed.DomainModel.csproj" />
+  </ItemGroup>
+
+</Project>

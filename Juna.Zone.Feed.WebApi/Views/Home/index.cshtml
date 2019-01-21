@@ -1,0 +1,19 @@
+﻿<html>
+<head>
+    <title>Juna.Feed.WebApi</title>
+</head>
+<body>
+    Your API will now be available via http://localhost:5000/api/Values
+
+    Obtain a token by signing in <a href="https://login.microsoftonline.com/plankLabdevelopmentWebapi.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_SUSI&client_id=d5a78b0e-5bc6-466b-bde2-ddc2624c9183&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fjwt.ms&scope=https%3A%2F%2Ffabrikamb2c.onmicrosoft.com%2Fdemoapi%2Fdemo.read&response_type=token&prompt=login" target="_blank">here.</a>
+    <br />
+    <br />
+    Try it out via curl using the comand below.
+    Make sure your replace [TOKEN] with the token obtained from the link above.
+    <br />
+    <i>curl http://localhost:5000/api/Values -i --header "Authorization: Bearer <b>[TOKEN]</b>"</i>
+    <br />
+    <br />
+    Note: Port will vary depending on whether you run via Visual Studio or <i>"dotnet run"</i> (port 5000)
+</body>
+</html>
